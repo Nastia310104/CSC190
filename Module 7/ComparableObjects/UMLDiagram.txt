@@ -1,0 +1,43 @@
+Legend:
+/Italicized/ = abstract
+
+
+/GeometricObject/ *implements* Comparable<GeometricObject>
+_________________________________
+    # GeometricObject()
+    +/toString/(): String
+    +/getArea/(): double
+    +/getPerimeter/(): double
+    +compareTo(): int
+
+
+
+GeometricObject <- Rectangle
+    -length: double
+    -width: double
+_________________________________
+    +getArea(): double
+    +getPerimeter(): double
+    +getLength(): double
+    +getWidth(): double
+    +toString(): String
+
+
+
+GeometricObject <- Circle
+    - radius: double
+_________________________________
+    +getArea(): double
+    +getPerimeter(): double
+    +getRadius(): double
+    +toString(): String
+
+
+
+Waiting Animation
+    -PLUSHKA_1: String
+    -PLUSHKA_2: String
+    -PLUSHKA_DONE: String
+    -SLEEPING_TIME: int
+_________________________________
+    +think(): void

@@ -1,0 +1,37 @@
+Legend:
+/Italicized/ = abstract
+
+/Comparable/
+_______________________________
+    +/compareTo/():int
+
+Cloneable
+
+/GeometricObject/ *implements* Cloneable, Comparable<GeometricObject>
+_________________________________
+    # GeometricObject()
+    +/toString/(): String
+    +/getArea/(): double
+    +/getPerimeter/(): double
+    +compareTo(): int
+    +clone(): Object
+
+
+GeometricObject <- Octagon
+    - side: double
+_________________________________
+    +getArea(): double
+    +getPerimeter(): double
+    +getSide(): double
+    +setSide(): void
+    +toString(): String
+
+
+
+Waiting Animation
+    -PLUSHKA_1: String
+    -PLUSHKA_2: String
+    -PLUSHKA_DONE: String
+    -SLEEPING_TIME: int
+_________________________________
+    +think(): void
